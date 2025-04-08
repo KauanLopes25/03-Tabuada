@@ -19,18 +19,13 @@ public class Main {
 		tabuada.setMaximoMultiplicador(10);
 		tabuada.mostrarTabuada();
 		
-		Tabuada tabuada2 = new Tabuada();
-		tabuada.setMultiplicando(6);
-		tabuada.setMinimoMultiplicador(1);
-		tabuada.setMaximoMultiplicador(10);
-		tabuada.mostrarTabuada();
-		
 		System.out.println(tabuada.getMultiplicando());
 		
 		JFrame tela = new JFrame();
 		tela.setTitle("DS1MA");
 		tela.setSize(500, 600);
 		tela.setVisible(true);
+	
 	}
 
 }

@@ -1,5 +1,8 @@
 package br.dev.kauan.tabuada.model;
 
+import java.awt.Toolkit;
+
+
 public class Tabuada {
 	private double multiplicando;
 	private double minimoMultiplicador;
@@ -44,6 +47,13 @@ public class Tabuada {
 			double produto = multiplicando * minimoMultiplicador;
 			System.out.println(multiplicando + " X " + minimoMultiplicador + " = " + produto);
 			minimoMultiplicador++;
+			try {
+	            Thread.sleep(300);
+	        } catch (InterruptedException e) {
+	            Thread.currentThread().interrupt();  // Restaura o estado de interrupção
+	        }
+			Toolkit toolkit = Toolkit.getDefaultToolkit();
+	        toolkit.beep();
 		}
 
 		System.out.println("----------------------------------");
